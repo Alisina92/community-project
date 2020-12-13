@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 
-const Navbar = () => {
-  const Navbar = styled.nav`
+
+const Navbar = (props) => {
+  const Navbar = props.styled.nav`
     background: black;
     padding: 0.1rem;
     width: 100%;
   `;
-  const Ul = styled.ul`
+  const Ul = props.styled.ul`
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   `;
   
-  const List = styled.li`
+  const List = props.styled.li`
     color: white;
   `;
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
         <Link to="/contact">
           <List>Contact</List>
         </Link>
-        <Link to="/Login">
+        <Link to="/Login" >
           <List>Login</List>
         </Link>
       </Ul>
