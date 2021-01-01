@@ -15,8 +15,10 @@ const Hero = (props) => {
        background: orange;
         position:  absolute;
         left:50%;
-        top:50%;
+        top:80%;
         transform: translate(-50%,-50%);
+        height:50px;
+        width:100px;
 
 `
   return (
