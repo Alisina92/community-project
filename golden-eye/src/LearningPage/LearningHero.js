@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Learning from'../images/learning.jpg'
-import data from'./links'
+import data from'./Resources'
 
 const LearningHero=()=>{
   const LearningImage = styled.img`
@@ -19,7 +19,7 @@ const LearningHero=()=>{
                       </li>
                     </ul>
                   );
-             })}  
+             })}
            </div>
     </div>)
 }
