@@ -1,11 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar-component/Navbar";
-import Hero from "./Hero-Image/Hero";
-import Cards from "./Cards/Cards";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import styled from "styled-components";
-import About from './About/About';
+import Navbar from "./Navbar-component/Navbar";
+import HomePage from "./HomePage/HomePage";
+import Learning from"./LearningPage/Learning";
 import Footer from "./Footer/Footer";
-import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import "./grid.css";
 
@@ -14,13 +13,12 @@ const App = () => {
   return (
     <div className="App ">
       <Router>
-        <Navbar styled={styled} />
-      </Router>
-      <Hero styled={styled} />
-      <Cards styled={styled} />
-      <About styled={styled} />
-      <Router>
-        <Footer styled={styled} />
+      <Navbar styled={styled} />
+        <switch>
+          <Route path="/" component={HomePage} exact />
+          <Route path="/learning" component={Learning} exact />
+        </switch>
+       <Footer styled={styled} />
       </Router>
     </div>
   );

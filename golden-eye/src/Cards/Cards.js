@@ -21,10 +21,18 @@ const Cards =()=>{
      `;
   return (
     <CardHeight className="row col-12  ">
-      <Red className="col-6 md-col-3 ">red</Red>
-      <Orange className="col-6 md-col-3">orenge</Orange>
-      <Yellow className=" col-6 md-col-3">yellow</Yellow>
-      <Blue className="col-6 md-col-3">Blue</Blue>
+      <Red className="col-6 md-col-3 ">
+        <p>Learning Material and HTML, CSS, JS and other programming languages</p>
+      </Red>
+      <Orange className="col-6 md-col-3">
+        <p>Join our Slack community of Coder</p>
+      </Orange>
+      <Yellow className=" col-6 md-col-3">
+        <p>Project that our community of coders have worked on</p>
+      </Yellow>
+      <Blue className="col-6 md-col-3">
+        <p>Contact detail of the Organization</p>
+      </Blue>
     </CardHeight>
   );
 };
