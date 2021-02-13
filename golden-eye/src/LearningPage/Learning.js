@@ -1,9 +1,13 @@
-import react from 'react';
+import React from 'react';
+import styled from "styled-components";
+import LearningHero from './LearningHero'
 
 const Learning =()=>{
-    return<div>
-        
-    </div>
+    return (
+      <div>
+         <LearningHero/>
+      </div>
+    );
 }
 
 export default Learning;
