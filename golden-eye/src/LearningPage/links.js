@@ -1,4 +1,4 @@
-const links =[
+const links=[
     {id:"1",
     webName:"freeCodeCamp",
     URL:"https://www.freecodecamp.org/"},
@@ -7,3 +7,4 @@ const links =[
     URL:"https://www.khanacademy.org/"}
 ];
 
+export default links;
